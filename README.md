@@ -12,62 +12,57 @@
 
 ## Cursor movement
 ```bash
-h        # move cursor left
-j        # move cursor down
-k        # move cursor up
-l        # move cursor right
-H        # move to top of screen
-M        # move to middle of screen
-L        # move to bottom of screen
-w        # jump forwards to the start of a word
-W        # jump forwards to the start of a word (words can contain punctuation)
-e        # jump forwards to the end of a word
-E        # jump forwards to the end of a word (words can contain punctuation)
-b        # jump backwards to the start of a word
-B        # jump backwards to the start of a word (words can contain punctuation)
-0        # jump to the start of the line
-^        # jump to the first non-blank character of the line
-$        # jump to the end of the line
-g_       # jump to the last non-blank character of the line
-gg       # go to the first line of the document
-G        # go to the last line of the document
+h        # move cursor left, left of the bump on the keyboard
+j        # move cursor down, opposite of jumping
+k        # move cursor up, kick someone, they go down
+l        # move cursor right, is right even tho its left 
+H        # move to top of screen, HOP to the TOP
+M        # move to middle of screen, M iddle
+L        # move to bottom of screen, L ow
+w        # jump forwards to the start of a word, word!
+W        # jump forwards to the start of a word (words can contain punctuation), Word after . is capital
+e        # jump forwards to the end of a word, e like end
+E        # jump forwards to the end of a word (words can contain punctuation), End efter . is capital 
+b        # jump backwards to the start of a word, beginning
+B        # jump backwards to the start of a word (words can contain punctuation), Beginning after . is capital
+0        # jump to the start of the line, programmers start to count at 0
+^        # jump to the first non-blank character of the line, ^ is before the 1 on the keyboard 
+$        # jump to the end of the line, in the end: payout $
+g_       # jump to the last non-blank character of the line, g (eee) I forgot something
+gg       # go to the first line of the document, go, go! quickly to the top!
+G        # go to the last line of the document, Go to the end 
 5G       # go to line 5
-fx       # jump to next occurrence of character x
-tx       # jump to before next occurrence of character x
-}        # jump to next paragraph (or function/block, when editing code)
-{        # jump to previous paragraph (or function/block, when editing code)
-zz       # center cursor on screen
-Ctrl + b # move back one full screen
-Ctrl + f # move forward one full screen
-Ctrl + d # move forward 1/2 a screen
-Ctrl + u # move back 1/2 a screen
-```
+fx       # jump to next occurrence of character x, find x
+tx       # jump to before next occurrence of character x, traverse x
+}        # jump to next paragraph (or function/block, when editing code), wrap it!
+{        # jump to previous paragraph (or function/block, when editing code), begin of wrap
+zz       # center cursor on screen, zzzooom to the middle 
 
 ## Insert mode - inserting/appending text
 ```bash
-i        # insert before the cursor
-I        # insert at the beginning of the line
-a        # insert (append) after the cursor
-A        # insert (append) at the end of the line
-o        # append (open) a new line below the current line
-O        # append (open) a new line above the current line
-ea       # insert (append) at the end of the word
-Esc      # exit insert mode
+i        # insert before the cursor, insert here!
+I        # insert at the beginning of the line,  I want you to insert.
+a        # insert (append) after the cursor, append 
+A        # insert (append) at the end of the line, At first append
+o        # append (open) a new line below the current line, of course theres more
+O        # append (open) a new line above the current line, Oh I forgot!
+ea       # insert (append) at the end of the word, easy append
+Esc      # exit insert mode, Escape
 ```
 
 ## Editing
 ```bash
-r        # replace a single character
-J        # join line below to the current one
-cc       # change (replace) entire line
-cw       # change (replace) to the start of the next word
-ce       # change (replace) to the end of the next word
-cb       # change (replace) to the start of the previous word
-c0       # change (replace) to the start of the line
-c$       # change (replace) to the end of the line
-s        # delete character and substitute text
-S        # delete line and substitute text (same as cc)
-xp       # transpose two letters (delete and paste)
+r        # replace a single character, r like replace
+J        # join line below to the current one, Join 
+cc       # change (replace) entire line, adding your boss cc requires changes
+cw       # change (replace) to the start of the next word, change until word 
+ce       # change (replace) to the end of the next word, change until end of word 
+cb       # change (replace) to the start of the previous word, change until beginning
+c0       # change (replace) to the start of the line, change until 0 
+c$       # change (replace) to the end of the line, change undil $ 
+s        # delete character and substitute text, substitute this
+S        # delete line and substitute text (same as cc), Sssssssss.... booom!
+xp       # transpose two letters (delete and paste), 
 .        # repeat last command
 u        # undo
 Ctrl + r # redo
